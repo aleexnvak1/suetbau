@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Süt Bau GmbH & Co. KG – Ihr Partner für Straßenbau & Landschaftsbau in Lahnau</title>
+    <meta name="description" content="Moderne und nachhaltige Baukompetenz für Straßenbau, Garten- & Landschaftsbau und Tiefbau in Lahnau & Mittelhessen. 20+ Jahre Erfahrung.">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+    <style>
+      html { font-family: 'Inter', sans-serif; }
+      /* Simple fade-in animation */
+      .fade-in { animation: fadeIn 1s ease-in; }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(30px);}
+        100% { opacity: 1; transform: translateY(0);}
+      }
+      /* For soft card hover */
+      .hover-up { transition: transform 0.2s, box-shadow 0.2s; }
+      .hover-up:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 12px 24px 0 rgba(60,60,60,0.07);}
+    </style>
+  </head>
+  <body class="bg-white text-neutral-900">
+
+<!-- NAVIGATION -->
+<header class="bg-white shadow-sm fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+    <!-- Logo GANZ LINKS -->
+    <a href="#start" class="flex items-center">
+      <img src="suetbau-fotos/logo.svg" alt="SÜT BAU Logo" class="h-10 w-auto" style="max-width: 180px;">
+    </a>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-6 items-center font-semibold">
+      <a href="#start" class="hover:text-[#65BB6A] transition">Start</a>
+      <a href="#leistungen" class="hover:text-[#65BB6A] transition">Leistungen</a>
+      <a href="#referenzen" class="hover:text-[#65BB6A] transition">Referenzen</a>
+      <a href="#kontakt" class="hover:text-[#65BB6A] transition">Kontakt</a>
+      <a href="#kontakt" class="ml-4 bg-[#65BB6A] hover:bg-[#307A4C] text-white rounded-xl px-5 py-2 transition shadow-lg"> Kostenlose Erstberatung</a>
+    </nav>
+    <!-- Hamburger -->
+    <button id="menuBtn" class="md:hidden flex items-center p-2">
+      <svg class="w-8 h-8 text-[#307A4C]" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg fade-in absolute w-full left-0 top-[72px]">
+    <nav class="flex flex-col py-4 gap-2 px-6">
+      <a href="#start" class="py-2 hover:text-[#65BB6A]">Start</a>
+      <a href="#leistungen" class="py-2 hover:text-[#65BB6A]">Leistungen</a>
+      <a href="#referenzen" class="py-2 hover:text-[#65BB6A]">Referenzen</a>
+      <a href="#kontakt" class="py-2 hover:text-[#65BB6A]">Kontakt</a>
+      <a href="#kontakt" class="mt-2 bg-[#65BB6A] text-white rounded-xl px-5 py-2 text-center">Kostenlose Erstberatung</a>
+    </nav>
+  </div>
+</header>
+
+    <!-- HERO SECTION -->
+<section id="start" class="pt-24 md:pt-32 pb-12 md:pb-20 bg-gradient-to-b from-[#F8F8F3] via-[#F3F8F2] to-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-10">
+    <div class="w-full md:w-1/2 fade-in">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#307A4C] leading-tight mb-4">
+        Ihr Traumgarten beginnt hier – <br class="sm:hidden"> kompetente & individuelle Gartengestaltung
+      </h1>
+      <p class="text-sm md:text-base text-[#4B604F] mb-7 md:whitespace-nowrap">
+        Sie sind auf der Suche nach einem <span class="font-semibold text-[#65BB6A]">professionellen</span> Partner für Ihr <span class="font-semibold text-[#65BB6A]">Zuhause?</span>
+      </p>
+      <a href="#kontakt" class="bg-[#307A4C] hover:bg-[#65BB6A] transition text-white px-7 py-3 rounded-xl text-lg font-semibold shadow-lg">Kostenlose Beratung sichern</a>
+    </div>
+    <div class="w-full md:w-1/2 fade-in flex justify-center">
+      <!-- Illustration -->
+      <img src="https://suetbau.de/wp-content/uploads/al_opt_content/IMAGE/suetbau.de/wp-content/uploads/2025/03/Gross-276209376_152499830526258_9106585547669922524_n.jpeg.bv_resized_desktop.jpeg.bv.webp"
+        alt="Gartenbau Illustration" class="rounded-3xl shadow-xl w-full max-w-lg object-cover border-4 border-[#65BB6A]"/>
+    </div>
+  </div>
+</section>
+
+    <section class="bg-white py-8">
+      <div class="max-w-5xl mx-auto overflow-hidden">
+        <!-- Desktop Grid (ab md) -->
+        <div class="hidden md:grid md:grid-cols-3 gap-6 text-center px-2 md:px-0">
+          <div class="flex flex-col items-center fade-in">
+            <div class="mb-2 flex items-center justify-center overflow-hidden">
+              <img src="suetbau-fotos/erfahrung.svg" alt="Erfahrung Icon" class="w-12 h-12 object-contain" />
+            </div>
+            <span class="text-2xl font-bold">20+</span>
+            <span class="text-[#307A4C]">Jahre Erfahrung</span>
+          </div>
+          <div class="flex flex-col items-center fade-in">
+            <div class="mb-2 flex items-center justify-center overflow-hidden">
+              <img src="suetbau-fotos/projekte.svg" alt="Projekte Icon" class="w-12 h-12 object-contain" />
+            </div>
+            <span class="text-2xl font-bold">350+</span>
+            <span class="text-[#307A4C]">erfolgreiche Projekte</span>
+          </div>
+          <div class="flex flex-col items-center fade-in">
+            <div class="mb-2 flex items-center justify-center overflow-hidden">
+              <img src="suetbau-fotos/Mitarbeiter.svg" alt="Team Icon" class="w-12 h-12 object-contain" />
+            </div>
+            <span class="text-2xl font-bold">15+</span>
+            <span class="text-[#307A4C]">Mitarbeiter</span>
+          </div>
+        </div>
+        <!-- Mobile Marquee (nur bis md) -->
+        <div class="md:hidden w-full relative">
+          <div class="marquee-track flex w-max">
+            <!-- Kachel-Gruppe 1 -->
+            <div class="flex gap-8 marquee-group">
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/erfahrung.svg" alt="Erfahrung Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">20+</span>
+                <span class="text-[#307A4C]">Jahre Erfahrung</span>
+              </div>
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/projekte.svg" alt="Projekte Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">350+</span>
+                <span class="text-[#307A4C]">erfolgreiche Projekte</span>
+              </div>
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/Mitarbeiter.svg" alt="Team Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">15+</span>
+                <span class="text-[#307A4C]">Mitarbeiter</span>
+              </div>
+            </div>
+            <!-- Kachel-Gruppe 2 (identisch für Endlosschleife) -->
+            <div class="flex gap-8 marquee-group">
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/erfahrung.svg" alt="Erfahrung Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">20+</span>
+                <span class="text-[#307A4C]">Jahre Erfahrung</span>
+              </div>
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/projekte.svg" alt="Projekte Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">350+</span>
+                <span class="text-[#307A4C]">erfolgreiche Projekte</span>
+              </div>
+              <div class="min-w-[180px] flex flex-col items-center fade-in">
+                <div class="mb-2 flex items-center justify-center overflow-hidden">
+                  <img src="suetbau-fotos/Mitarbeiter.svg" alt="Team Icon" class="w-12 h-12 object-contain" />
+                </div>
+                <span class="text-2xl font-bold">15+</span>
+                <span class="text-[#307A4C]">Mitarbeiter</span>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (max-width: 767px) {
+              .marquee-track {
+                animation: scrollMarquee 10s linear infinite;
+              }
+              @keyframes scrollMarquee {
+                0% { transform: translateX(0);}
+                100% { transform: translateX(-50%);}
+              }
+              .marquee-track { will-change: transform; }
+            }
+            @media (min-width: 768px) {
+              .marquee-track {
+                animation: none !important;
+                transform: none !important;
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+<section id="leistungen" class="bg-[#F8F8F3] py-14 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-extrabold text-[#307A4C] mb-10 text-center">
+      Unsere Leistungen
+    </h2>
+    <div class="grid gap-10 md:grid-cols-3">
+      <!-- Kellerabdichtung -->
+      <div class="bg-white rounded-2xl shadow-sm border border-[#65BB6A] hover-up fade-in flex flex-col">
+        <div class="overflow-hidden rounded-t-2xl">
+          <img 
+            src="suetbau-fotos/kellerabdichtung.jpg" 
+            alt="Kellerwandabdichtung" 
+            class="w-full h-48 md:h-64 object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col items-center p-8 pt-6">
+          <h3 class="text-xl font-bold mb-2 text-[#307A4C]">Kellerwandabdichtung</h3>
+          <p class="text-[#4B604F] text-center">
+            Fachgerechte Kellerabdichtung mit Drainagesystem: Freilegung der Kellerwand, Bitumendickbeschichtung und druckwasserdichtes Drainagesystem gegen Feuchtigkeit im Keller.
+          </p>
+        </div>
+      </div>
+      <!-- Zisternenbau -->
+      <div class="bg-white rounded-2xl shadow-sm border border-[#65BB6A] hover-up fade-in flex flex-col">
+        <div class="overflow-hidden rounded-t-2xl">
+          <img 
+            src="suetbau-fotos/zisternen.jpg" 
+            alt="Zisternenbau" 
+            class="w-full h-48 md:h-64 object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col items-center p-8 pt-6">
+          <h3 class="text-xl font-bold mb-2 text-[#307A4C]">Zisternenbau</h3>
+          <p class="text-[#4B604F] text-center">
+            Wir übernehmen den fachgerechten Einbau von Zisternen – vom Aushub über den Einbau des Tanks bis zum Anschluss an Regenwasserleitungen und Überlauf. Auf Wunsch inklusive Filtertechnik und Pumpe.
+          </p>
+        </div>
+      </div>
+      <!-- Poolbau -->
+      <div class="bg-white rounded-2xl shadow-sm border border-[#65BB6A] hover-up fade-in flex flex-col">
+        <div class="overflow-hidden rounded-t-2xl">
+          <img 
+            src="suetbau-fotos/poolaushub.jpg" 
+            alt="Poolbau" 
+            class="w-full h-48 md:h-64 object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col items-center p-8 pt-6">
+          <h3 class="text-xl font-bold mb-2 text-[#307A4C]">Poolbau</h3>
+          <p class="text-[#4B604F] text-center">
+            Vom ersten Baggerhub bis zum Technikanschluss: Wir bereiten alles vor, damit Ihr Pool fachgerecht gebaut werden kann – inklusive Aushub, Entwässerung und Anschlüsse.
+          </p>
+        </div>
+      </div>
+    </div>
+        <!-- LEISTUNGSSPEKTRUM AUSWAHL -->
+    <section class="bg-[#F8F8F3] py-12">
+      <div class="max-w-6xl mx-auto px-4 md:px-8">
+        <h2 class="text-2xl font-bold text-[#307A4C] mb-7 text-center">Weitere Leistungen</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Erd- & Baggerarbeiten</span>
+          </div>
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Außenanlagen</span>
+          </div>
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Zisternenbau</span>
+          </div>
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Zaun & Sichtschutz</span>
+          </div>
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Straßen- & Tiefbau</span>
+          </div>
+          <div class="bg-white rounded-2xl p-6 hover-up fade-in border border-[#65BB6A]">
+            <span class="font-semibold text-[#307A4C]">Terrassenbau</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+
+
+
+
+    <!-- PROBLEMLÖSER-SECTION -->
+    <section class="py-12 md:py-16 bg-gradient-to-b from-[#F3F8F2] via-[#F8F8F3] to-white">
+      <div class="max-w-5xl mx-auto px-4 text-center fade-in">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-[#307A4C]">Sie suchen einen verlässlichen Partner für Ihr nächstes Bauprojekt?</h2>
+        <p class="mb-6 text-[#4B604F]">Wir lösen Ihre Herausforderungen – persönlich, professionell, pünktlich!</p>
+        <ul class="text-left mx-auto max-w-xl mb-6 space-y-2 text-[#4B604F]">
+          <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#65BB6A] inline-block"></span>Termingerechte Umsetzung & Planungssicherheit</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#65BB6A] inline-block"></span>Transparente, faire Angebote – keine versteckten Kosten</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#65BB6A] inline-block"></span>Hoher Qualitätsanspruch bei Material & Ausführung</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#65BB6A] inline-block"></span>Persönliche Ansprechpartner – schnelle Reaktionszeiten</li>
+          <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-[#65BB6A] inline-block"></span>Nachhaltige Lösungen für Ihr Budget</li>
+        </ul>
+        <a href="#kontakt" class="bg-[#307A4C] hover:bg-[#65BB6A] text-white px-7 py-3 rounded-xl font-semibold shadow-lg transition">Unverbindlich anfragen</a>
+      </div>
+    </section>
+
+<!-- REFERENZEN / PROJEKTBEISPIELE (SVGs ohne Hintergrund, größere Icons) -->
+<section id="referenzen" class="bg-[#F3F8F2] py-14 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-extrabold text-[#307A4C] mb-8 text-center">
+      Unsere Projekterfahrung
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Private Projekte (jetzt an erster Stelle) -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover-up fade-in">
+        <div class="mb-4 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/privat.svg" alt="Private Projekte" class="w-24 h-24 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C] mb-2">Private Projekte</span>
+        <p class="text-[#4B604F] text-center text-sm">
+          Vielseitige Projekte für Privatkunden – von hochwertigen Gartenanlagen bis zu Entwässerungssystemen, stets mit höchster Diskretion.
+        </p>
+      </div>
+      <!-- Gewerbliche Außenanlagen (bleibt in der Mitte) -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover-up fade-in">
+        <div class="mb-4 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/gewerblich.svg" alt="Gewerbliche Außenanlagen" class="w-24 h-24 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C] mb-2">Gewerbliche Außenanlagen</span>
+        <p class="text-[#4B604F] text-center text-sm">
+          Gestaltung und Pflege moderner Grün- und Zufahrtsbereiche für Unternehmen und Gewerbe – abgestimmt auf die individuellen Anforderungen.
+        </p>
+      </div>
+      <!-- Öffentliche Projekte (jetzt an dritter Stelle) -->
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover-up fade-in">
+        <div class="mb-4 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/oeffentlicheprojekte.svg" alt="Öffentliche Projekte" class="w-24 h-24 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C] mb-2">Öffentliche Projekte</span>
+        <p class="text-[#4B604F] text-center text-sm">
+          Von kommunalen Außenanlagen bis zu Straßenbau – seit Jahren vertrauensvolle Zusammenarbeit mit umliegenden Gemeinden.
+        </p>
+      </div>
+    </div>
+    <div class="mt-10 text-center text-[#4B604F] text-sm">
+      <span>
+        Aus Diskretionsgründen und auf Wunsch unserer Kunden veröffentlichen wir keine Projektdetails oder Referenzfotos.<br>
+        Gerne erläutern wir Ihnen unsere Kompetenzen und Erfahrungen in einem persönlichen Gespräch.
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABLAUF SECTION OHNE HINTERGRUND, GROSSE ICONS -->
+<section class="bg-white py-14 md:py-20">
+  <div class="max-w-6xl mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-extrabold text-[#307A4C] mb-10 text-center">So läuft Ihr Projekt mit uns ab</h2>
+    <div class="grid md:grid-cols-5 gap-8">
+      <div class="flex flex-col items-center fade-in">
+        <div class="mb-3 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/anfrage.svg" alt="Anfrage" class="w-20 h-20 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C]">1. Anfrage</span>
+        <p class="text-sm text-[#4B604F] text-center">Kontaktieren Sie uns einfach – telefonisch oder online.</p>
+      </div>
+      <div class="flex flex-col items-center fade-in">
+        <div class="mb-3 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/Beratung.svg" alt="Beratung" class="w-20 h-20 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C]">2. Kostenlose Beratung</span>
+        <p class="text-sm text-[#4B604F] text-center">Individuelle Bedarfsanalyse & Angebotserstellung.</p>
+      </div>
+      <div class="flex flex-col items-center fade-in">
+        <div class="mb-3 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/Umsetzung.svg" alt="Umsetzung" class="w-20 h-20 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C]">3. Umsetzung</span>
+        <p class="text-sm text-[#4B604F] text-center">Unser Team startet die Arbeiten zuverlässig und sauber.</p>
+      </div>
+      <div class="flex flex-col items-center fade-in">
+        <div class="mb-3 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/Fertigstellung.svg" alt="Fertigstellung" class="w-20 h-20 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C]">4. Fertigstellung</span>
+        <p class="text-sm text-[#4B604F] text-center">Abnahme & Übergabe – alles aus einer Hand.</p>
+      </div>
+      <div class="flex flex-col items-center fade-in">
+        <div class="mb-3 flex items-center justify-center overflow-visible">
+          <img src="suetbau-fotos/Betreuung.svg" alt="Betreuung" class="w-20 h-20 object-contain" />
+        </div>
+        <span class="font-bold text-[#307A4C]">5. Betreuung</span>
+        <p class="text-sm text-[#4B604F] text-center">Wir bleiben Ihr Ansprechpartner auch nach Projektabschluss.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#F8F8F3] py-14 md:py-20">
+  <div class="max-w-4xl mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-extrabold text-[#307A4C] mb-8 text-center">Häufige Fragen</h2>
+    <div id="faq-accordion" class="space-y-6">
+      <!-- FAQ 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+        <button type="button" class="faq-toggle w-full text-left px-5 py-4 font-bold cursor-pointer text-[#307A4C] text-lg flex justify-between items-center">
+          <span>Wie schnell erhalten wir ein Angebot?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#307A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-content px-5 pb-4 text-[#4B604F] transition-all duration-300 max-h-0 opacity-0 pointer-events-none">
+          Nach Ihrer Anfrage melden wir uns in der Regel innerhalb von 24h und erstellen ein individuelles, transparentes Angebot – selbstverständlich kostenlos und unverbindlich.
+        </div>
+      </div>
+      <!-- FAQ 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+        <button type="button" class="faq-toggle w-full text-left px-5 py-4 font-bold cursor-pointer text-[#307A4C] text-lg flex justify-between items-center">
+          <span>Bieten Sie auch nachhaltige Baulösungen an?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#307A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-content px-5 pb-4 text-[#4B604F] transition-all duration-300 max-h-0 opacity-0 pointer-events-none">
+          Ja! Uns sind nachhaltige und ressourcenschonende Lösungen besonders wichtig. Wir beraten Sie gerne zu umweltfreundlichen Materialien und ökologischer Flächengestaltung.
+        </div>
+      </div>
+      <!-- FAQ 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+        <button type="button" class="faq-toggle w-full text-left px-5 py-4 font-bold cursor-pointer text-[#307A4C] text-lg flex justify-between items-center">
+          <span>Übernehmen Sie auch kleine Projekte für Privatkunden?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#307A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-content px-5 pb-4 text-[#4B604F] transition-all duration-300 max-h-0 opacity-0 pointer-events-none">
+          Natürlich! Egal ob kleiner Gartenweg oder umfangreiches Gewerbeprojekt – wir setzen Ihr Vorhaben mit der gleichen Sorgfalt für jedes Budget um.
+        </div>
+      </div>
+      <!-- FAQ 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+        <button type="button" class="faq-toggle w-full text-left px-5 py-4 font-bold cursor-pointer text-[#307A4C] text-lg flex justify-between items-center">
+          <span>Wie läuft die Zusammenarbeit ab?</span>
+          <svg class="w-6 h-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#307A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="faq-content px-5 pb-4 text-[#4B604F] transition-all duration-300 max-h-0 opacity-0 pointer-events-none">
+          Von der Beratung bis zur Fertigstellung erhalten Sie alles aus einer Hand. Transparenz und persönliche Betreuung stehen bei uns im Mittelpunkt.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // FAQ Accordion: Nur eine offen, animiert
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      const contents = document.querySelectorAll('.faq-content');
+      const icons = document.querySelectorAll('.faq-toggle svg');
+
+      toggles.forEach((toggle, idx) => {
+        toggle.addEventListener('click', function () {
+          contents.forEach((c, ci) => {
+            if (ci === idx) {
+              if (!c.classList.contains('open')) {
+                // Öffnen: Animation mit max-height und opacity
+                c.classList.add('open');
+                c.style.maxHeight = c.scrollHeight + "px";
+                c.style.opacity = 1;
+                c.style.pointerEvents = "auto";
+                icons[ci].style.transform = "rotate(180deg)";
+              } else {
+                // Schließen
+                c.classList.remove('open');
+                c.style.maxHeight = null;
+                c.style.opacity = 0;
+                c.style.pointerEvents = "none";
+                icons[ci].style.transform = "rotate(0deg)";
+              }
+            } else {
+              c.classList.remove('open');
+              c.style.maxHeight = null;
+              c.style.opacity = 0;
+              c.style.pointerEvents = "none";
+              icons[ci].style.transform = "rotate(0deg)";
+            }
+          });
+        });
+      });
+      // Optional: Erste Frage standardmäßig offen
+      // toggles[0].click();
+    });
+  </script>
+</section>
+
+
+
+    <!-- FOOTER CTA -->
+    <section class="py-14 md:py-20 bg-gradient-to-r from-[#426944] via-[#65BB6A] to-[#CAFFCD]">
+      <div class="max-w-3xl mx-auto px-4 text-center text-white fade-in">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Sie möchten Ihr Projekt mit uns besprechen?</h2>
+        <p class="mb-8">Lassen Sie sich unverbindlich beraten. Wir melden uns innerhalb von 24h!</p>
+        <a href="#kontakt" class="bg-white text-[#307A4C] hover:bg-[#F8F8F3] rounded-xl px-7 py-3 text-lg font-semibold shadow-lg transition">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="bg-white py-14 md:py-20">
+  <div class="max-w-4xl mx-auto px-4 md:px-8">
+    <h2 class="text-3xl font-extrabold text-[#307A4C] mb-6 text-center">Kontaktieren Sie uns</h2>
+    <form action="https://formspree.io/f/xdkdepga" method="POST" class="bg-[#F8F8F3] rounded-2xl p-8 shadow-lg grid gap-6 fade-in">
+      <div class="grid md:grid-cols-2 gap-6">
+        <input type="text" name="name" placeholder="Name" autocomplete="name" 
+          class="rounded-lg border border-[#65BB6A] px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#307A4C]" required>
+        <input type="email" name="email" placeholder="E-Mail" autocomplete="email"
+          class="rounded-lg border border-[#65BB6A] px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#307A4C]" required>
+      </div>
+      <input type="tel" name="telefon" placeholder="Telefon" autocomplete="tel"
+        class="rounded-lg border border-[#65BB6A] px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#307A4C]">
+      <textarea rows="4" name="nachricht" placeholder="Ihre Nachricht"
+        class="rounded-lg border border-[#65BB6A] px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#307A4C]" required></textarea>
+      <button type="submit"
+        class="bg-[#307A4C] hover:bg-[#65BB6A] transition text-white px-7 py-3 rounded-xl text-lg font-semibold shadow-lg">
+        Nachricht senden
+      </button>
+      <!-- Optional: eigene Dankeseite -->
+      <!-- <input type="hidden" name="_next" value="https://deine-domain.de/danke.html"> -->
+    </form>
+    <div class="text-center mt-8 text-[#4B604F]">
+      <p>Süt Bau GmbH &amp; Co. KG · Haustädter Str. 1 · 35633 Lahnau</p>
+      <p>Telefon: <a href="tel:+49 1607543879" class="underline hover:text-[#307A4C]">+49 1607543879</a> · 
+        E-Mail: <a href="mailto:info@suetbau.de" class="underline hover:text-[#307A4C]">info@suetbau.de</a>
+      </p>
+    </div>
+  </div>
+  <img src="suetbau-fotos/bgbau.svg" alt="" width="150" class="mx-auto block mt-6" />
+</section>
+
+
+<footer class="bg-[#307A4C] text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <h1>Süt Bau GmbH & Co. KG</h1>
+      </div>
+      <p class="mb-2">Haustädter Str. 1, 35633 Lahnau</p>
+      <p>info@suetbau.de · +49 1607543879</p>
+      <div class="flex gap-3 mt-2">
+        <!-- Social Media -->
+        <a href="https://www.facebook.com/p/Süt-Bau-GmbH-Co-KG-100082979810218/?locale=de_DE" aria-label="Facebook" class="hover:opacity-80">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12a10 10 0 10-11.9 9.95v-7.04h-2.2v-2.91h2.2V9.5c0-2.18 1.3-3.38 3.3-3.38.95 0 1.94.17 1.94.17v2.13h-1.09c-1.08 0-1.42.67-1.42 1.36v1.65h2.43l-.39 2.91h-2.04v7.04A10 10 0 0022 12"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <nav class="flex flex-col md:flex-row gap-3 text-sm">
+      <a href="#start" class="hover:underline">Start</a>
+      <a href="#leistungen" class="hover:underline">Leistungen</a>
+      <a href="#referenzen" class="hover:underline">Referenzen</a>
+      <a href="#kontakt" class="hover:underline">Kontakt</a>
+      <a href="/impressum.html" class="hover:underline">Impressum</a>
+      <a href="/datenschutz.html" class="hover:underline">Datenschutz</a>
+    </nav>
+    <div class="mt-4 md:mt-0 text-xs text-white opacity-70">
+      © 2024 Süt Bau GmbH &amp; Co. KG
+    </div>
+  </div>
+</footer>
+
+    <!-- SIMPLE JS FOR HAMBURGER -->
+    <script>
+      
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      window.addEventListener('click', (e) => {
+        if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>
